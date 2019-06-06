@@ -1,5 +1,5 @@
 # Anki-Template
-Card template for Anki cards with Embeded webpages and Youtube Player.
+Card template for Anki cards with embedded webpages and Youtube Player.
 
 Screenshots : 
 
