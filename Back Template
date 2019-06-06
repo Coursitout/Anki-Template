@@ -1,0 +1,72 @@
+<div class=question >
+{{cloze:Text}}}
+</div>
+
+<div class=infos>
+{{#Source#1}}
+<iframe id="Sources"
+    title="Sources"
+    width="100%"
+    height="720"
+    frameBorder="0"
+    src="{{Source#1}}">
+</iframe>
+{{/Source#1}}
+
+{{#Source#2}}
+<iframe id="Sources"
+    title="Sources"
+    width="100%"
+    height="720"
+    frameBorder="0"
+    src="{{Source#2}}">
+</iframe>
+{{/Source#2}}
+
+{{#Youtube#1}}
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/{{Youtube#1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class=youtube>
+{{/Youtube#1}}
+
+{{#Youtube#2}}
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/{{Youtube#2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class=youtube>
+{{/Youtube#2}}
+
+{{#Extra}}
+<div class=extra>
+{{Extra}}
+</div>
+{{/Extra}}
+
+<div class=tags>
+<div id="tags-container"></div>
+</div>
+</div>
+
+<script> var clozes = document.getElementsByClassName("cloze"); var clr = window.getComputedStyle(clozes[0]).color; var bg = window.getComputedStyle(clozes[0]).background; for (i=1; i<clozes.length; ++i) { clozes[i].style.background = clr; clozes[i].onclick = function() {this.style.background=bg ;} } </script>
+
+<script>
+var colors = [
+  // Add more colors to this array as necessary
+  "#f44336", "#9C27B0", "#3F51B5", "#03A9F4", "#009688",
+  "#C0CA33", "#FF9800", "#FF5722", "#9E9E9E", "#607D8B"
+]
+var tagContent = "{{Tags}}";
+if (tagContent.search(" ") >= 1) {
+  var tags = tagContent.split(" ");
+} else {
+  var tags = [tagContent];
+}
+for (var i in tags) {
+  var newDiv = document.createElement("div");
+  newDiv.id = "tag";
+  newDiv.innerHTML = tags[i];
+  newDiv.style.display = "inline-block";
+
+  newDiv.style.backgroundColor = colors[i]; //comment out for outline
+  //Choose outline
+  newDiv.style.border = "1px solid" + colors[i]; //comment out for background-fill
+  document.getElementById("tags-container").appendChild(newDiv);
+}
+</script>
