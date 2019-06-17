@@ -1,8 +1,18 @@
-<div class=question >
-{{cloze:Text}}}
-</div>
+<div class="w3-container w3-content" style="max-width:820px">
 
-<div class=infos>
+<div class="{{Tags}}">
+
+<div class="w3-panel w3-card">
+    <p>{{cloze:Text}}}</p>
+ </div>
+
+ </div>
+ </div>
+
+<div class="w3-hide-small">
+<div class="w3-container w3-content" style="max-width:1200px">
+ <div class="w3-panel w3-white w3-card w3-display-container">
+
 {{#Source#1}}
 <iframe id="Sources"
     title="Sources"
@@ -34,13 +44,15 @@
 {{/Youtube#2}}
 
 {{#Extra}}
-<div class=extra>
+<div class="w3-panel w3-red w3-card w3-display-container w3-padding-large">
 {{Extra}}
 </div>
 {{/Extra}}
 
-<div class=tags>
+
+<div class="w3-panel w3-blue w3-card w3-display-container w3-padding-large">
 <div id="tags-container"></div>
+
 </div>
 </div>
 
