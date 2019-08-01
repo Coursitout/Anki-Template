@@ -35,12 +35,10 @@
 
 {{#Youtube#1}}
 <iframe width="100%" height="720" src="https://www.youtube.com/embed/{{Youtube#1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class=youtube>
 {{/Youtube#1}}
 
 {{#Youtube#2}}
 <iframe width="100%" height="720" src="https://www.youtube.com/embed/{{Youtube#2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class=youtube>
 {{/Youtube#2}}
 
 {{#Extra}}
