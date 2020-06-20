@@ -1,6 +1,6 @@
 .card {
- font-family: OpenDyslexic3, Helvetica, Verdana, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; 
- font-size: 20px;
+ font-family: Roboto, Helvetica, Verdana, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; 
+ font-size: 22px;
  text-align: center;
 }
 
@@ -14,6 +14,11 @@ a {
 
 img[src*="latex"] {
     vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #tag{
@@ -34,65 +39,140 @@ img[src*="latex"] {
  padding-bottom: 7px;
 }
 
-div[class*="leech"] {
-    background-color: #e84545!important;
-    color:white;
+div[class*="Autres"] {
+	background-color: #96ceb4;
+	max-width:800px;
+}
+
+div[class*="Lycée"] {
+	background-color: #96ceb4;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Histoire"] {
-    background-color: #feb236;
+	background-color: #feb236;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Géologie"] {
-    background-color:  #99b433;
+	background-color:  #99b433;
+	max-width:800px;
+	margin: auto;
 }
 
-div[class*="Chimie"],[class*="Physique"] {
-    background-color:  #c48f65;
+div[class*="Chimie"] {
+	background-color:  #82b74b;
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Physique"] {
+	background-color:  #c48f65;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Grammaire"] {
-    background-color:  #92a8d1;
+	background-color:  #92a8d1;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Biologie"] {
-    background-color:  #82b74b;
+	background-color:  #82b74b;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Géographie"] {
-    background-color:  #d9ad7c;
+	background-color:  #d9ad7c;
+	max-width:800px;
+	margin: auto;
 }
 
-div[class*="Littérature"], [class*="Art"] {
-    background-color:  #87bdd8;
+div[class*="Littérature"] {
+	background-color:  #87bdd8;
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Art"] {
+	background-color:  #87bdd8;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Philosophie"] {
-    background-color: #b2c2bf;
+	background-color: #b2c2bf;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Mathématiques"] {
-    background-color: #96ceb4;
+	background-color: #d4a0a7;
+	font-family: Times New Roman;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Sociologie"] {
-    background-color: #b0aac0;
+	background-color: #b0aac0;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Économie"] {
-    background-color: #b8a9c9;
+	background-color: #b8a9c9;
+	max-width:800px;
+	margin: auto;
 }
 
-div[class*="Politique"],[class*="Droit"]  {
-    background-color: #bcbcbe;
+div[class*="Politique"]  {
+	background-color: #bcbcbe;
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Droit"]  {
+	background-color: #bcbcbe;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Psychologie"] {
-    background-color: #aacfd0;
+	background-color: #aacfd0;
+	max-width:800px;
+	margin: auto;
 }
 
 div[class*="Théologie"] {
-    background-color: #e283ac;
+	background-color: #e283ac;
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Informatique"] {
+	background-color: #96ceb4;
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Exercice"] {
+	background-color: #ffff;
+	color: black;
+	max-width:1200px;
+	margin: auto;
+}
+
+div[class*="Youtube"] {
+	max-width:800px;
+	margin: auto;
+}
+
+div[class*="Hecht"] {
+	background-color: #fde9c6;
 }
 
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
