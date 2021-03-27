@@ -45,33 +45,15 @@
 <hr>
 {{/Wikipedia}}
 
-{{#Youtube Anglais}}
-<iframe id="ytplayer" type="text/html" width="100%" height="720"
-  src="https://www.youtube.com/embed?listType=search&list={{text:Youtube Anglais}}"
-  frameborder="0"></iframe>
-{{/Youtube Anglais}}
-
-{{#Youtube Français}}
-<iframe id="ytplayer" type="text/html" width="100%" height="720"
-  src="https://www.youtube.com/embed?listType=search&list={{text:Youtube Français}}"
-  frameborder="0"></iframe>
-{{/Youtube Français}}
-
-{{#Youtube ID}}
-<iframe width="100%" height="720" src="https://www.youtube.com/embed/{{text:Youtube ID}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{/Youtube ID}}
+{{#Youtube}}
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/{{text:Youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{/Youtube}}
 
 {{#Images}}
 <div class="w3-panel w3-display-container w3-padding-large">
 {{Images}}
 </div>
 {{/Images}}
-
-{{#PDF}}
-<div class="w3-panel w3-display-container w3-padding-large">
-<iframe src="https://drive.google.com/file/d/{{PDF}}/preview" width="100%" height="720"></iframe>
-</div>
-{{/PDF}}
 
 {{#Extra}}
 <div class="w3-panel w3-grey w3-card w3-display-container w3-padding-large">
@@ -81,11 +63,10 @@
 
 <div class="w3-panel w3-blue w3-card w3-display-container w3-padding-large">
 <ul>
-{{#Youtube ID}}<li style="text-align: left;">Youtube: <a href=https://www.youtube.com/watch?v={{text:Youtube ID}}">https://www.youtube.com/watch?v={{text:Youtube ID}}</a>{{/Youtube ID}}</li>
+{{#Youtube}}<li style="text-align: left;">Youtube: <a href=https://www.youtube.com/watch?v={{text:Youtube}}">https://www.youtube.com/watch?v={{text:Youtube}}</a>{{/Youtube}}</li>
 {{#Wikipedia}}<li style="text-align: left;">Wikipedia: <a href="{{text:Wikipedia}}">{{text:Wikipedia}}</a>{{/Wikipedia}}</li>
 {{#Website#1}}<li style="text-align: left;">Website #1: <a href="{{text:Website#1}}">{{text:Website#1}}</a>{{/Website#1}}</li>
 {{#Website#2}}<li style="text-align: left;">Website #2: <a href="{{text:Website#2}}">{{text:Website#2}}</a>{{/Website#2}}</li>
-{{#PDF}}<li style="text-align: left;">PDF: <a href="https://drive.google.com/open?id={{text:PDF}}">https://drive.google.com/open?id={{text:PDF}}</a>{{/PDF}}</li>
 <li style="text-align: left;">Subdeck: {{Subdeck}} </a></li>
 
 </ul>
