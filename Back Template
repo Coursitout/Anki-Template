@@ -6,33 +6,17 @@
  </div>
  </div>
 
+
 <div class="w3-hide-small">
 <div class="w3-container w3-content" style="max-width:1200px">
+
+{{#Obsidian}}<div class="w3-panel w3-purple w3-card w3-display-container w3-padding-large">
+
+{{Obsidian}}
+
+</div>{{/Obsidian}}
+
  <div class="w3-panel w3-white w3-card w3-display-container">
-
-{{#Website#1}}
-<iframe id="Website#1"
-    title="Website#1"
-    width="100%"
-    height="720"
-    frameBorder="0"
-    src="{{text:Website#1}}">
-</iframe>
-<hr>
-{{/Website#1}}
-
-
-{{#Website#2}}
-<iframe id="Website#2"
-    title="Website#2"
-    width="100%"
-    height="720"
-    frameBorder="0"
-    src="{{text:Website#2}}">
-</iframe>
-<hr>
-{{/Website#2}}
-
 
 {{#Wikipedia}}
 <iframe id="Wikipedia"
@@ -45,6 +29,28 @@
 <hr>
 {{/Wikipedia}}
 
+{{#Website#1}}
+<iframe id="Website#1"
+    title="Website#1"
+    width="100%"
+    height="720"
+    frameBorder="0"
+    src="{{text:Website#1}}">
+</iframe>
+<hr>
+{{/Website#1}}
+
+{{#Website#2}}
+<iframe id="Website#2"
+    title="Website#2"
+    width="100%"
+    height="720"
+    frameBorder="0"
+    src="{{text:Website#2}}">
+</iframe>
+<hr>
+{{/Website#2}}
+
 {{#Youtube}}
 <iframe width="100%" height="720" src="https://www.youtube.com/embed/{{text:Youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {{/Youtube}}
@@ -55,6 +61,12 @@
 </div>
 {{/Images}}
 
+{{#Embeded Image}}
+<div class="w3-panel w3-display-container w3-padding-large">
+<img src="{{text:Embeded Image}}"/>
+</div>
+{{/Embeded Image}}
+
 {{#Extra}}
 <div class="w3-panel w3-grey w3-card w3-display-container w3-padding-large">
 {{Extra}}
@@ -64,25 +76,17 @@
 <div class="w3-panel w3-blue w3-card w3-display-container w3-padding-large">
 <ul>
 {{#Youtube}}<li style="text-align: left;">Youtube: <a href=https://www.youtube.com/watch?v={{text:Youtube}}">https://www.youtube.com/watch?v={{text:Youtube}}</a>{{/Youtube}}</li>
+
 {{#Wikipedia}}<li style="text-align: left;">Wikipedia: <a href="{{text:Wikipedia}}">{{text:Wikipedia}}</a>{{/Wikipedia}}</li>
+
 {{#Website#1}}<li style="text-align: left;">Website #1: <a href="{{text:Website#1}}">{{text:Website#1}}</a>{{/Website#1}}</li>
+
 {{#Website#2}}<li style="text-align: left;">Website #2: <a href="{{text:Website#2}}">{{text:Website#2}}</a>{{/Website#2}}</li>
+
 <li style="text-align: left;">Subdeck: {{Subdeck}} </a></li>
 
 </ul>
 </div>
-
-{{#TTS Anglais}}
-<div class="w3-panel w3-orange w3-card w3-display-container w3-padding-large">
-{{tts en_US:TTS Anglais}}
-</div>
-{{/TTS Anglais}}
-
-{{#TTS Français}}
-<div class="w3-panel w3-orange w3-card w3-display-container w3-padding-large">
-{{tts fr_FR:TTS Français}}
-</div>
-{{/TTS Français}}
 
 <div style="max-width:1200px">
 <div class="w3-panel w3-green w3-card w3-display-container w3-padding-large">
