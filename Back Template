@@ -1,124 +1,52 @@
-<div class="w3-container w3-content" style="max-width:1200px">
-<div class="{{Tags}}">
-<div class="w3-panel w3-card">
-    <p>{{cloze:Cloze}}</p>
- </div>
- </div>
- </div>
+{{#Question}}
 
+<div class="Flashcard">
 
-<div class="w3-hide-small">
-<div class="w3-container w3-content" style="max-width:1200px">
+		{{Question}}
+		</p>
+		<hr>
+		<b><p><div style='color:Green  '>{{Answer}}</div></b>
+		
+	
+</div>
 
-{{#Obsidian}}<div class="w3-panel w3-purple w3-card w3-display-container w3-padding-large">
+{{/Question}}
 
-{{Obsidian}}
-
-</div>{{/Obsidian}}
-
- <div class="w3-panel w3-white w3-card w3-display-container">
+<div class="Informations">
 
 {{#Wikipedia}}
-<iframe id="Wikipedia"
-    title="Wikipedia"
-    width="100%"
-    height="720"
-    frameBorder="0"
-    src="{{text:Wikipedia}}">
-</iframe>
-<hr>
+<div class="Wikipedia">
+    <iframe src="{{text:Wikipedia}}" width="100%" height="700px" style="border:none;"></iframe>
+</div>
 {{/Wikipedia}}
 
-{{#Website#1}}
-<iframe id="Website#1"
-    title="Website#1"
-    width="100%"
-    height="720"
-    frameBorder="0"
-    src="{{text:Website#1}}">
-</iframe>
-<hr>
-{{/Website#1}}
-
-{{#Website#2}}
-<iframe id="Website#2"
-    title="Website#2"
-    width="100%"
-    height="720"
-    frameBorder="0"
-    src="{{text:Website#2}}">
-</iframe>
-<hr>
-{{/Website#2}}
-
-{{#Youtube}}
-<iframe width="100%" height="720" src="https://www.youtube.com/embed/{{text:Youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{/Youtube}}
-
-{{#Images}}
-<div class="w3-panel w3-display-container w3-padding-large">
-{{Images}}
+{{#Mnemonic}}
+<div class="Mnemonic">
+{{Mnemonic}}
 </div>
-{{/Images}}
+{{/Mnemonic}}
 
-{{#Embeded Image}}
-<div class="w3-panel w3-display-container w3-padding-large">
-<img src="{{text:Embeded Image}}"/>
+{{#Image}}
+<div class="Image">
+{{Image}}
 </div>
-{{/Embeded Image}}
+{{/Image}}
 
-{{#Extra}}
-<div class="w3-panel w3-grey w3-card w3-display-container w3-padding-large">
-{{Extra}}
+{{#Wikipedia}}
+<div class="Explication" style="text-align: center;">
+  <a href="{{text:Wikipedia}}">Wikipedia</a>
 </div>
-{{/Extra}}
+{{/Wikipedia}}
 
-<div class="w3-panel w3-blue w3-card w3-display-container w3-padding-large">
-<ul>
-{{#Youtube}}<li style="text-align: left;">Youtube: <a href=https://www.youtube.com/watch?v={{text:Youtube}}">https://www.youtube.com/watch?v={{text:Youtube}}</a>{{/Youtube}}</li>
+{{#Obsidian}}
+<div class="Obsidian">
+{{Obsidian}}
+</div>
+{{/Obsidian}}
 
-{{#Wikipedia}}<li style="text-align: left;">Wikipedia: <a href="{{text:Wikipedia}}">{{text:Wikipedia}}</a>{{/Wikipedia}}</li>
-
-{{#Website#1}}<li style="text-align: left;">Website #1: <a href="{{text:Website#1}}">{{text:Website#1}}</a>{{/Website#1}}</li>
-
-{{#Website#2}}<li style="text-align: left;">Website #2: <a href="{{text:Website#2}}">{{text:Website#2}}</a>{{/Website#2}}</li>
-
-<li style="text-align: left;">Subdeck: {{Subdeck}} </a></li>
-
-</ul>
+<div class="TTS">
+{{tts en_EN hypertts_preset=Back_realtime_0 voices=HyperTTS:Answer}}
 </div>
 
-<div style="max-width:1200px">
-<div class="w3-panel w3-green w3-card w3-display-container w3-padding-large">
-<div id="tags-container"></div>
- </div>
 
 </div>
-</div>
-
-<script>
-var colors = [
-  // Add more colors to this array as necessary
-  "#f44336", "#9C27B0", "#3F51B5", "#03A9F4", "#009688",
-  "#C0CA33", "#FF9800", "#FF5722", "#9E9E9E", "#607D8B"
-]
-var tagContent = "{{Tags}}";
-if (tagContent.search(" ") >= 1) {
-  var tags = tagContent.split(" ");
-} else {
-  var tags = [tagContent];
-}
-for (var i in tags) {
-  var newDiv = document.createElement("div");
-  newDiv.id = "tag";
-  newDiv.innerHTML = tags[i];
-  newDiv.style.display = "inline-grid";
-
-  newDiv.style.backgroundColor = colors[i]; //comment out for outline
-  //Choose outline
-  newDiv.style.border = "1px solid" + colors[i]; //comment out for background-fill
-  document.getElementById("tags-container").appendChild(newDiv);
-}
-</script>
-
-<!––For more info about card template: alexandre@verhaeghe.me––>
