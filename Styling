@@ -16,8 +16,8 @@ body {
 a {
   color: #1a73e8; /* Strong blue for all links */
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-weight: bold; /* All links are bold */
+  transition: color 0.3s ease, text-decoration: 0.3s ease;
 }
 
 a:hover, a:focus {
@@ -30,13 +30,17 @@ a:hover, a:focus {
 .Informations,
 .Trivia,
 .Obsidian,
-.TTS {
+.TTS,
+.Explication,
+.Mnemonic,
+.Wikipedia { /* Added .Wikipedia here */
   width: 100%;
   max-width: 800px;
   margin: 12px auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Flashcard styles */
 .Flashcard {
@@ -56,6 +60,18 @@ a:hover, a:focus {
   font-weight: normal;
 }
 
+/* Specific link color inside Flashcard */
+.Flashcard a {
+  color: #8060d3; /* Custom purple color for links inside Flashcard */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Flashcard a:hover, .Flashcard a:focus {
+  color: #6549a5; /* Slightly darker purple on hover or focus */
+  text-decoration: underline;
+}
+
 /* Information styles */
 .Informations {
   background-color: #ecf0f1;
@@ -65,16 +81,26 @@ a:hover, a:focus {
   border: 1px solid #bdc3c7;
 }
 
-/* Trivia styles */
-.Trivia {
+/* Explication styles */
+.Explication {
   background-color: #e8f6fd;
   border: 1px solid #3498db;
   padding: 12px 16px;
   font-size: 16px;
   color: #2980b9;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block; /* Changé de flex à block */
+  text-align: justify;
+}
+
+/* Mnemonic styles */
+.Mnemonic { /* Renamed to Mnemonic */
+  background-color: #d4ed9c; /* Light green */
+  border: 1px solid #66bb6a; /* Slightly darker green for border */
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #2e7d32; /* Darker green for text */
+  display: block;
+  text-align: justify;
 }
 
 .Trivia::before {
@@ -118,8 +144,8 @@ a:hover, a:focus {
 .Obsidian a {
   color: #8e24aa; /* Rich purple for better readability and aesthetic */
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-weight: bold; /* Ensure Obsidian links are bold */
+  transition: color 0.3s ease, text-decoration: 0.3s ease;
 }
 
 .Obsidian a:hover, .Obsidian a:focus {
@@ -144,6 +170,18 @@ a:hover, a:focus {
   margin-bottom: 10px;
 }
 
+/* Wikipedia styles */
+.Wikipedia {
+    background-color: #ffffff; /* Or any color you prefer */
+    border: 1px solid #a2a9b1; /* Standard Wikipedia border color */
+    padding: 12px 16px;
+    font-size: 16px;
+    /*  No need for display: flex if it's just a container */
+    text-align: left; /*  Or justify, depending on content */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
 /* Responsive design */
 @media screen and (max-width: 600px) {
   body {
@@ -154,7 +192,10 @@ a:hover, a:focus {
   .Informations,
   .Trivia,
   .Obsidian,
-  .TTS {
+  .TTS,
+  .Explication,
+  .Mnemonic,
+  .Wikipedia { /* Added here too for responsiveness */
     padding: 12px;
     margin: 10px auto;
   }
@@ -166,7 +207,10 @@ a:hover, a:focus {
   .Informations,
   .Trivia,
   .Obsidian,
-  .TTS {
+  .TTS,
+  .Explication,
+  .Mnemonic,
+  .Wikipedia {
     font-size: 14px;
   }
 
