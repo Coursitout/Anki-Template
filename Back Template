@@ -44,9 +44,4 @@
 </div>
 {{/Obsidian}}
 
-<div class="TTS">
-{{tts en_EN hypertts_preset=Back_realtime_0 voices=HyperTTS:Answer}}
-</div>
-
-
 </div>
